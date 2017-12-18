@@ -9,46 +9,41 @@ body {
      }
 	 
 #container {
-	width: 1000px;
+	width: 800px;
 	height: 800px;
 	margin: auto;
 	background-color: white;
 	}
 	
 #header {
-	width: 1000px;
+	width: 800px;
 	height: 150px;
 	float: left;
 	background-color: white;
     }
 	
-#menu {
-	width: 100%;
-	height: 45px;
-	float: left;
-	background-color: #006f9d;
-	}
+
 	
 .logo {
 	height: 84px;
 	width: 200px;
 }
 
-.left {
-	background-color: yellow;
-	width: 30%;
-	padding: 20px;
-    float: left;
-}
-
 .content {
 	background-color: green;
-	width: 70%;
+	width: 75%;
 	padding: 20px;
 	float: left;
 }
 
-@media (max-width:1000px) {
+.left {
+	background-color: yellow;
+	width: 25%;
+	padding: 20px;
+    float: left;
+}
+
+@media (max-width:800px) {
   .left, .content, .menu {
     width:100%;/*The width is 100%, when the viewport is 800px or smaller*/
   }
