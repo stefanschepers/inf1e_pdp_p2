@@ -7,13 +7,19 @@
         <title>iDesign</title>
 	</head>
 	<body>
-		<div id="container">
+            <?php 
+                $link = mysqli_connect('localhost', 'root', '') 
+                OR DIE('Could not connect to the database!');    
+            ?>
+            
+		
 			<div id="header">
-				<img src="img/logo.png" alt="iDesign Logo" class="logo">
-			<div>
-			<div id="menu">
-				Home
+                            <img src="img/logo.png" alt="iDesign Logo" class="logo"> 
+                        </div>
+                        <div id="menu">
+                            <span class="menufooteritems">Home - Mijn portfolio's - Contact -  CMS</span>
 			</div>
+            <div id="container">
 			<div class="left">
 				Inloggen HIER (Placeholder)
 				<p>Email:<br>
@@ -23,7 +29,11 @@
 				<button type="button">Inloggen</button>
 			</div>
 			<div class="content">
+
 			</div>	
 		</div>
+            <div id="footer">
+                <span class="menufooteritems">&#169; iDesign</span>
+            </div>
 	</body>
 </html>	
