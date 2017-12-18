@@ -29,7 +29,10 @@
 				<button type="button">Inloggen</button>
 			</div>
 			<div class="content">
-
+                            <p>Welkom op iDesign!<br></p><p><br>Op iDesign kun jij je eigen digitale portfolio uploaden
+                            (showcaseportfolio, ontwikkelingsportfolio en beoordelingsportfolio). Ook kun je berichten
+                            in het gastenboek van andere leden plaatsen (en je eigen gastenboek lezen).<br><br></p>
+                            <img src="img/homepc.png" alt="Flowers" style="max-width:100%;height:auto;">
 			</div>	
 		</div>
             <div id="footer">
