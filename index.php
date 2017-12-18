@@ -14,7 +14,7 @@
             
 		
             <div id="header">
-                <img src="img/logo.png" alt="iDesign Logo" class="logo"> 
+                <a href="index.php"><img src="img/logo.png" alt="iDesign Logo" class="logo"></a> 
             </div>
             <div id="menu">
                 <span class="menufooteritems"><a href="index.php">Home</a>  -  Mijn portfolio's  -  Contact  -  <a href="cms.php">CMS</a></span>
