@@ -18,7 +18,6 @@
                         $email = $_POST["username"];
                         $pw = $_POST["wachtwoord"];
                         $query = "SELECT Email, Password FROM user WHERE Email='$email' AND Password='$pw' LIMIT 1";
-                        echo $query;
                         $result = mysqli_query($coni, $query);
                         if (mysqli_num_rows($result) == 1) {
                             session_start();
