@@ -7,10 +7,22 @@
         <title>iDesign</title>
 	</head>
 	<body>
-            <?php 
-                $link = mysqli_connect('localhost', 'root', '') 
-                OR DIE('Could not connect to the database!');    
-            ?>
+            <?php
+                    if (isset($_POST["submit"])) {
+                        include 'protofolio/dbci.php';
+                        $email = $_POST["username"];
+                        $pw = $_POST["wachtwoord"];
+                        $query = "SELECT Email, Password FROM user WHERE Email='$email' AND Password='$pw' LIMIT 1";
+                        $result = mysqli_query($coni, $query);
+                        if (mysqli_num_rows($result) == 1) {
+                            session_start();
+                            $_SESSION["ingelogd"] = true;
+                            echo "ingelogd!";
+                        } else {
+                            echo "<br/>Foutieve informatie";
+                        }
+                    }
+                    ?>
             
 		
             <div id="header">
@@ -21,12 +33,12 @@
             </div>
             <div id="container">
 		<div class="left">
-                    <p><b>Inloggen HIER (Placeholder)</b><br></p>
-                    <p><br>Email:<br>
-                    <input type="text"><br>
-                    Wachtwoord:<br>
-                    <input type="text"></p>
-                    <button type="button">Inloggen</button>
+                    <p><b>Inloggen</b><br><br></p>
+                    <form method="post" action="index.php">
+                    Email: <input type="text" name="username" size="20" maxlength="20"><br />
+                    Wachtwoord: <input type="password" name="wachtwoord" size="20" maxlength="20"><br /><br />
+                    <input type="submit" name="submit" value="Log in!" />
+                    </form>
 		</div>
 		<div class="content">
                     <p><b>Welkom op iDesign!</b><br></p><p><br>Op iDesign kun jij je eigen digitale portfolio uploaden
