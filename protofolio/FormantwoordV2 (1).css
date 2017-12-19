@@ -1,0 +1,11 @@
+.VraagBox{
+    width:100%;
+    height:100%;
+    margin:4px 0px 2px 0px;
+}
+#FormantwoordpaginaBox {
+    width:50%;
+}
+.AntwoordenEcho {
+    margin-top:4px;
+}

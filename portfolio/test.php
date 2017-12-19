@@ -1,91 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
-        <link href="Styling/CMSStyling.css" type="text/css" rel="stylesheet" />
-        <title></title>
+        <style>
+            table {
+            border: 1px solid black;
+            }
+            table th{
+              border-bottom: 1px solid black;
+            }
+        </style>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Users</title>
     </head>
     <body>
         <?php
-        /* $coni = mysqli_connect("sql304.epizy.com", "epiz_21240585", "INF1E2017");
-          if (!$coni) {
-          die("couldnt connect to mysql");
-          }
-          $dbselect = mysqli_select_db($coni, "php_week4_bugreports");
-          if (!$dbselect) {
-          echo "Could not establish an connection to the selected database.";
-          } */
-        ?>
-
-        <div id="CMSWrapper">
-            <div class="row">
-                <div class="col-20"><div id="Header"></div></div>
-            </div>
-            <div class="row">
-                <div class="col-3">
-                    <div id="Menu">
-                        <ul class="nav">
-							<div class="dropdown">
-								<li><a href="index.php">Home</a>
-								  <div class="dropdown-content">
-									<ul>
-										<li>test1</li>
-										<li>test2</li>
-										<li>test3</li>
-									</ul>
-								</li>
-								  </div>
-							
-								  
-							
-                           <div class="dropdown">                          
-							  <li><a href="index.php">Gegevens</li></a>
-							  <div class="dropdown-content">
-								<ul>
-										<li>test1</li>
-										<li>test2</li>
-										<li>test3</li>
-									</ul>
-							  </div>
-							</div>
-							
-							
-							<div class="dropdown">                          
-							  <li><a href="index.php">Rapporten</li></a>
-							  <div class="dropdown-content">
-								<a href="index.php">Link 1</a>
-								<a href="#">Link 2</a>
-								<a href="#">Link 3</a>
-							  </div>
-							</div>
-							
-							
-                            <div class="dropdown">                          
-							  <li><a href="index.php">Uitloggen</li></a>
-							  <div class="dropdown-content">
-								<a href="#">Link 1</a>
-								<a href="#">Link 2</a>
-								<a href="#">Link 3</a>
-							  </div>
-							</div>
-                        </ul>
-						
-						
-
-							</div>
-                   </div>
-                
-                
-            
-            <?php
         $conn= mysqli_connect("localhost","root","")
                 OR Die("Connection failed");
            
             mysqli_select_db($conn,"digitaal_portfolio")
             OR Die("Connection failed");
         ?>
-        <div class="tekst">
+        
         <table style="width:80%">
             <tr>
                 <th>Naam</th>
@@ -157,7 +92,7 @@
                                     }
                                     ?>
                 </td>   
-                <td><?php        $mysqli="SELECT Bio FROM user";
+                 <td><?php        $mysqli="SELECT Bio FROM user";
                                  $result= $conn->query($mysqli);
         
                                     if($result->num_rows >0)
@@ -182,14 +117,10 @@
                                     ?>
                 </td>     
            </tr>
-        </table> 
-            
-        </div>
-                </div>
-                </div>
+        </table>  
         <?php
          $conn->Close();
         ?>
-
     </body>
 </html>
+
