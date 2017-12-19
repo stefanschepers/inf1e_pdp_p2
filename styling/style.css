@@ -81,6 +81,18 @@ body {
         margin-bottom: 20px;
 }
 
+.login {
+        margin-top: 20px;
+	background-color: white;
+	width: 100%;
+	padding: 20px;
+	float: left;
+        border: 2px black solid;
+        border-radius: 10px;
+        font-size: 20px;
+        margin-bottom: 20px;    
+}
+
 a, a:visited {
 	color: white;
         text-decoration: none;  
