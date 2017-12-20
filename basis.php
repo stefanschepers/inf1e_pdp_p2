@@ -19,8 +19,17 @@ and open the template in the editor.
                     <li>Mijn portfolio's</li>
                     <li>Contact</li>
                     <a href="cms.php"><li>CMS</li></a>
-                    <li>Inloggen</li>
-                    <li>Uitloggen</li>
+                    <?php
+                        if (isset($_SESSION['ingelogd']) && $_SESSION['ingelogd'] == true) { 
+                    ?>
+                    <a href="logout.php"><li>Uitloggen</li></a> 
+                    <?php
+                        }else{ 
+                    ?>
+                    <a href="login.php"><li>Inloggen</li></a> 
+                    <?php 
+                        } 
+                    ?>
                 </ul>
             </div>
             <div id="container">

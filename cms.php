@@ -7,17 +7,6 @@
         <title></title>
     </head>
     <body>
-        <?php
-        /* $coni = mysqli_connect("sql304.epizy.com", "epiz_21240585", "INF1E2017");
-          if (!$coni) {
-          die("couldnt connect to mysql");
-          }
-          $dbselect = mysqli_select_db($coni, "php_week4_bugreports");
-          if (!$dbselect) {
-          echo "Could not establish an connection to the selected database.";
-          } */
-        ?>
-
         <div id="CMSWrapper">
             <div class="row">
                 <div class="col-20"><div id="Header"></div></div>
@@ -78,12 +67,8 @@
                 
                 
             
-            <?php
-        $conn= mysqli_connect("localhost","root","")
-                OR Die("Connection failed");
-           
-            mysqli_select_db($conn,"digitaal_portfolio")
-            OR Die("Connection failed");
+        <?php
+        include 'dbci.php'; 
         ?>
         <div class="tekst">
         <table style="width:80%">
