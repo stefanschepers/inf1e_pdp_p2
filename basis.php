@@ -18,7 +18,17 @@ and open the template in the editor.
                     <a href="index.php"><li>Home</li></a>
                     <li>Mijn portfolio's</li>
                     <li>Contact</li>
+                    
+                    
+                    
+                    
+                    
                     <a href="cms.php"><li>CMS</li></a>
+                    
+                    
+                    
+                    
+                    
                     <?php
                         if (isset($_SESSION['ingelogd']) && $_SESSION['ingelogd'] == true) { 
                     ?>

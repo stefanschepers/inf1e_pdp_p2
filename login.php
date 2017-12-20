@@ -23,21 +23,14 @@
                         }
                     }
             ?>
-            <div id="header">
-                <a href="index.php"><img src="img/logo.png" alt="iDesign Logo" class="logo"></a> 
-            </div>
-            <div id="menu">
+            
                 <?php include 'basis.php'; ?>
-            </div>
-            <div id="container">
-		<div class="login">
+            
+		<div class="fullcontent">
                     <form method="post" action="login.php">
                         Gebruikersnaam: <input type="text" name="username" size="20" maxlength="20"><br />
                         Wachtwoord: <input type="password" name="wachtwoord" size="20" maxlength="20"><br /><br />
                     <input type="submit" name="submit" value="Inloggen" />
                     </form>
-                </div>	
-            </div>
-            <div id="footer">
-                <span class="menufooteritems">&#169; iDesign - 2018</span>
-            </div>
+                </div>
+                <?php include 'afsluiten.php'; ?>

@@ -6,8 +6,10 @@ and open the template in the editor.
 -->
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="styling/style.css">
         <meta charset="UTF-8">
-        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>iDesign - Uitloggen</title>
     </head>
     <body>
         <?php
@@ -16,7 +18,12 @@ and open the template in the editor.
             $_SESSION["ingelogd"] = false;
             session_destroy();
         ?>
-            <div id="succes">Je bent succesvol uitgelogd. <a href="index.php?p=home">Klik hier</a></div></div><br />
+        <?php include 'basis.php'; ?>
+            <div class="fullcontent">
+                Je bent succesvol uitgelogd.  
+                <meta http-equiv="refresh" content="1; url=index.php">
+            </div>
+        <?php include 'afsluiten.php'; ?>
        
     </body>
 </html>
