@@ -15,10 +15,10 @@ and open the template in the editor.
             </div>
             <div id="menu">
                 <ul>
-                    <li><a href="index.php">Home</a></li>
+                    <a href="index.php"><li>Home</li></a>
                     <li>Mijn portfolio's</li>
                     <li>Contact</li>
-                    <li><a href="cms.php">CMS</a></li>
+                    <a href="cms.php"><li>CMS</li></a>
                     <li>Inloggen</li>
                     <li>Uitloggen</li>
                 </ul>
