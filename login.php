@@ -16,6 +16,7 @@
                         if (mysqli_num_rows($result) == 1) {
                             session_start();
                             $_SESSION["ingelogd"] = true;
+                            $_SESSION["level"] = 0;
                             echo '<meta http-equiv="refresh" content="1; url=index.php">';
                         } else {
                             echo "<br/>Foutieve informatie";
