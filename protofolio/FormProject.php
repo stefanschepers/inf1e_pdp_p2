@@ -1,3 +1,22 @@
+<?php // 
+//if(isset($_POST['submit'])){
+//    $to = "ywielage@gmail.com"; // this is your Email address
+//    $from = $_POST['Email']; // this is the sender's Email address
+//    $FirstName = $_POST['FirstName'];
+//    $LastName = $_POST['LastName'];
+//    $subject = "Form submission";
+//    $subject2 = "Copy of your form submission";
+//    $Omschrijving = $FirstName . " " . $LastName . " wrote the following:" . "\n\n" . $_POST['Omschrijving'];
+//    $Omschrijving2 = "Here is a copy of your message " . $FirstName . "\n\n" . $_POST['Omschrijving'];
+//
+//    $headers = "From:" . $from;
+//    $headers2 = "From:" . $to;
+//    mail($to,$subject,$Omschrijving,$Omschrijvin);
+//    mail($from,$subject2,$Omschrijving2,$headers2); // sends a copy of the message to the sender
+//    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+//    // You can also use header('Location: thank_you.php'); to redirect to another page.
+//    }
+?>
 <!DOCTYPE HTML>
 <html> 
     <head>
