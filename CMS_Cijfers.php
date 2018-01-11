@@ -10,10 +10,8 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
-        
-        </div>
-            <div id="footer">
-                <span class="menufooteritems">&#169; iDesign - 2018</span>
-            </div>
+        <?php
+            
+        ?>
     </body>
 </html>
