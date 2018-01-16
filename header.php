@@ -29,7 +29,6 @@
                 <li>Mijn portfolio's</li>
                 <?php
                 if (isset($_SESSION['ingelogd']) && $_SESSION['ingelogd'] == true) {
-                    echo $_SESSION['level'];
                     if (isset($_SESSION['level']) && $_SESSION['level'] > 0) {
                         echo '<a href="cms.php"><li>CMS</li></a>';
                     }

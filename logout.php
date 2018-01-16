@@ -2,7 +2,6 @@
         <?php
         include 'header.php';
         include 'dbci.php';
-            session_start();
             $_SESSION["ingelogd"] = false;
             session_destroy();
         ?>
