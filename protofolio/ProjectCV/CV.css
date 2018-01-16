@@ -1,0 +1,40 @@
+* {
+    padding:0px;
+    margin:0px;
+}
+body, html {
+    width:100%;
+    height:100%;
+}
+#Container {
+    width:100%;
+    height:100%;
+    background-color:whitesmoke;
+}
+#CVBlok {
+    width:50%;
+    height:80%;
+    background-color:white;
+    margin:0 auto;
+}
+.Titelh2 {
+    text-align:center;
+    padding-top:10px;
+}
+#CVBlokTitel {
+    width:100%;
+    height:15%;
+}
+#CVBlokContent {
+    position:relative;
+    width:100%;
+    height:85%;
+    
+}
+#FormCVButton {   
+    text-align:center;
+}
+#ButtonDiv {
+    position: absolute;
+    bottom:0;
+}
