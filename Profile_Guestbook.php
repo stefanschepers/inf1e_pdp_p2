@@ -1,6 +1,4 @@
-<?php
-include "Header.php";
-?>
+
 <div id="Guestbook">
     <div class="Guestbook_Box">
         <form method="POST" action="Profile_Guestbook.php">
@@ -38,7 +36,5 @@ include "Header.php";
         }
         ?>
     </div>
+    <div class="flClear"></div>
 </div>
-<?php
-include "Footer.php";
-?>

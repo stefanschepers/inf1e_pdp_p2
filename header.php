@@ -32,6 +32,7 @@
                     if (isset($_SESSION['level']) && $_SESSION['level'] > 0) {
                         echo '<a href="cms.php"><li>CMS</li></a>';
                     }
+                    echo '<a href="Profile.php?Mode=View"><li>Profiel</li></a>';
                     echo '<a href="logout.php"><li>Uitloggen</li></a>';
                 } else {
                     echo '<a href="login.php"><li>Inloggen</li></a>';
