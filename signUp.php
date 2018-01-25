@@ -5,35 +5,35 @@ include "header.php";
     <div class="FormBox">
         <table id="TableForm">
             <tr>
-                <td><div class="FormColumn">Password</div><div class="FormInput"></td>
+                <td><div class="FormColumn">Password:</div><div class="FormInput"></td>
                 <td><div class="FormColumn"><input type="password" name="password"></div></td>
             </tr>
             <tr>
-                <td><div class="FormColumn">FirstName</div></td>
+                <td><div class="FormColumn">First name:</div></td>
                 <td><div class="FormInput"><input type="FirstName" name="FirstName" placeholder="FirstName"/></div></td>
             </tr>   
             <tr>
-                <td><div class="FormColumn">LastName</div></td>
+                <td><div class="FormColumn">Last name:</div></td>
                 <td><div class="FormInput"><input type="LastName" name="LastName" placeholder="LastName"/></div></td>
             </tr>
             <tr>
-                <td><div class="FormColumn">Date_of_Birth</div></td>
+                <td><div class="FormColumn">Date of Birth:</div></td>
                 <td><div class="FormInput"><input type="Date_of_Birth" name="Date_of_Birth" placeholder="Date_of_Birth"/></div></td>
             </tr>
             <tr>
-                <td><div class="FormColumn">Email</div></td>
+                <td><div class="FormColumn">Email:</div></td>
                 <td><div class="FormInput"><input type="Email" name="Email" placeholder="Email"/></div></td>
             </tr> 
             <tr>
-                <td><div class="FormColumn">Bio</div></td>
+                <td><div class="FormColumn">Bio:</div></td>
                 <td><div class="FormInput"><input type="Bio" name="Bio" placeholder="Bio"/></div></td>
             </tr>
             <tr>
-                <td><div class="FormColumn">User_level_ID</div></td>
+                <td><div class="FormColumn">User_level_ID:</div></td>
                 <td><div class="FormInput"><input type="User_level_ID" name="User_level_ID" placeholder="User_level_ID"/></div></td>
             </tr>
             <tr>
-                <td><div class="FormColumn">SLB_Mark</div></td>
+                <td><div class="FormColumn">SLB_Mark:</div></td>
                 <td><div class="FormInput"><input type="SLB_Mark" name="SLB_Mark" placeholder="SLB_Mark"/></div></td> 
             </tr>
             <tr>
