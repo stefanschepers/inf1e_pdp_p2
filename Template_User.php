@@ -5,7 +5,10 @@ include "dbci.php";
 ?>
 
 <?php
-
+/*
+Datum : 25-11-2017
+Naam  : Wesley Velderman
+*/
 $userID = $_SESSION["User_ID"];
 $query = "SELECT * FROM form_template";
 $result = mysqli_query($coni, $query);
@@ -35,6 +38,8 @@ if (isset($_POST["submit"])) {
         echo "U bent al in bezit van de geselecteerde Form Template. U kan er maar 1 aanmaken.";
     }
 }
+    mysqli_close($coni);
+
 ?>
 
 
