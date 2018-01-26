@@ -139,3 +139,38 @@ ul {
     background-color: blanchedalmond;
 }
 
+.test {
+   font-family: Lato-Regular;
+  font-size: 15px;
+  color: #808080;
+  line-height: 1.4;
+}
+
+.kolom {
+    height: 75px;
+    width: 300px;
+    font-family: Lato-Regular;
+    font-size: 15px;
+    color: white;
+    line-height: 1.4;
+    background-color: #1E33AF;
+    border: solid 1px transparent;
+    border-style: solid none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.groep {
+    height: 75px;
+    width: 300px;
+    font-family: Lato-Regular;
+    font-size: 15px;
+    color: white;
+    line-height: 1.4;
+    background-color: #006f9e;
+    border: solid 1px transparent;
+    border-style: solid none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}

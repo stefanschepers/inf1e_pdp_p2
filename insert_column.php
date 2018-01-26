@@ -1,4 +1,9 @@
-
+<html>
+    <head>
+        <link href="Styling/CMSStyling.css" type="text/css" rel="stylesheet" />
+    </head>
+    
+    <body>
 <?php
 session_start();
 include "CMSHeader.php";
@@ -24,13 +29,13 @@ if (!$result1)
 
 $result = mysqli_query($conn, $mysli);
 ?>
-<table>
+<table class="test">
     <tr>
-        <th>Column ID</th>
-        <th>Template_ID</th>
-        <th>Column_Name</th>
-        <th>Type</th>
-        <th>position</th>
+        <th class="kolom">Column ID</th>
+        <th class="kolom">Template_ID</th>
+        <th class="kolom">Column_Name</th>
+        <th class="kolom">Type</th>
+        <th class="kolom">position</th>
     </tr>
     <?php
     if (!$result)
@@ -41,12 +46,12 @@ $result = mysqli_query($conn, $mysli);
 
         while ($row = mysqli_fetch_assoc($result))
         {
-            echo "<tr>
-                            <td>" . $row['Column_ID'] . "</td>
-                            <td>" . $row['Template_ID'] . "</td>
-                            <td>" . $row['Column_Name'] . "</td>
-                            <td>" . $row['Type'] . "</td>
-                            <td>" . $row['position'] . "</td>
+            echo "<tr class=groep>
+                            <td class=groep>" . $row['Column_ID'] . "</td>
+                            <td class=groep>" . $row['Template_ID'] . "</td>
+                            <td class=groep>" . $row['Column_Name'] . "</td>
+                            <td class=groep>" . $row['Type'] . "</td>
+                            <td class=groep>" . $row['position'] . "</td>
                            </tr>";
         }
     }
@@ -81,8 +86,9 @@ if (isset($_POST["submit"]))
 
 
 
-
 include "CMSFooter.php";
 ?>
 
-
+    </body>
+    
+</html>
