@@ -1,6 +1,10 @@
 <?php
 include "header.php";
 include 'dbci.php';
+/*
+Datum : 25-11-2017
+Naam  : Wesley Velderman
+*/
 ?>
 
 <!-- 
@@ -16,20 +20,18 @@ evt CV
 <?php
 if ($_GET["Mode"] == "View") {
 //profiel foto weergeven
-    $query = "SELECT * FROM user, user_styling WHERE user.User_ID = user_styling.User_ID AND user_styling.User_ID = " . $_SESSION["User_ID"];
+    $query = "SELECT * FROM user WHERE User_ID = " . $_SESSION["User_ID"];
     $result = mysqli_query($coni, $query);
     if (!$result) {
         echo "Select query failed!";
     }
     while ($fetch = mysqli_fetch_assoc($result)) {
-        echo "<img src='" . $fetch["Profile_Picture"] . "' width='50px' alt='" . $fetch["Profile_Picture"] . "'/>";
-
         echo "<h1>" . $fetch["FirstName"] . " " . $fetch["LastName"] . "</h1>";
         //echo "<img src='" . $fetch["Logo"] . "' width='50px' alt='" . $fetch["Logo"] . "'/>";
     }
 
     include "Profile_Guestbook.php";
-
+    include "CMS_Cijfers_view.php";
     if (isset($_GET["Mode"])) {
         if ($_GET["Mode"] == "Edit") {
             echo '<form method="POST" action="Profile.php" enctype="multipart/form-data">
@@ -37,6 +39,7 @@ if ($_GET["Mode"] == "View") {
         <p> Logo<input type="file" name="Logo"/></p>
         <p> <input type="submit" name="SUBMIT"></p>
         </form>';
+            
         }
     }
 }
@@ -51,6 +54,8 @@ if (isset($_POST["SUBMIT"])) {
     if (!$result) {
         echo "Insert query failed!";
     }
+        mysqli_close($coni);
+
 }
 ?>
 <?php

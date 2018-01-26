@@ -1,4 +1,9 @@
-
+<?php 
+/*
+Datum : 25-11-2017
+Naam  : Wesley Velderman
+*/
+?>
 <div id="Guestbook">
     <div class="Guestbook_Box">
         <form method="POST" action="Profile_Guestbook.php">
@@ -9,7 +14,7 @@
         </form>
         <?php
         include "dbci.php";
-        $tempID = 0;
+        $tempID = $_SESSION["User_ID"];
 
         if (isset($_POST["SUBMIT"])) {
             $name = $_POST["Name"];
@@ -34,6 +39,8 @@
             }
             mysqli_free_result($result);
         }
+            mysqli_close($coni);
+
         ?>
     </div>
     <div class="flClear"></div>
