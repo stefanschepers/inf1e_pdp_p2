@@ -7,10 +7,10 @@ Naam  : Wesley Velderman
 <div id="Guestbook">
     <div class="Guestbook_Box">
         <form method="POST" action="Profile_Guestbook.php">
-            <p>Name <input class="Guestbook_FormFormat" type="text" name="Name" placeholder="Name"/></p>
-            <p>E-mail <input class="Guestbook_FormFormat" type="email" name="Email" placeholder="E-mail"/></p>
-            <p>Message <textarea class="Guestbook_FormFormat" name="Content" cols="20" rows="4" placeholder="Insert text here"></textarea></p>
-            <input type="submit" name="SUBMIT"/>
+            <p class="name">Name <br><input class="Guestbook_FormFormat" type="text" name="Name" placeholder="Name"/></p>
+            <br><br><br> <p class="name">E-mail<br> <input class="Guestbook_FormFormat" type="email" name="Email" placeholder="E-mail"/></p><br>
+            <p class="name">Message <br><textarea class="Guestbook_FormFormatt" name="Content" cols="20" rows="4" placeholder="Insert text here"></textarea></p>
+            <input class="submit" type="submit" name="SUBMIT"/>
         </form>
         <?php
         include "dbci.php";

@@ -125,3 +125,54 @@ a, a:visited {
     width:100%;/*The width is 100%, when the viewport is 800px or smaller*/
   }
 }
+
+
+.test {
+    
+    height: 100px;
+    border: 1px solid black;
+}
+
+.name {
+    text-align: center;
+}
+
+.submit {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.Guestbook_FormFormat{
+
+	height: 50px;
+	border: 3px solid #cccccc;
+	padding: 5px;
+	font-family: Tahoma, sans-serif;
+	background-image: url(bg.gif);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+        
+}
+
+.Guestbook_FormFormatt{
+
+	height: 100px;
+	border: 3px solid #cccccc;
+	padding: 5px;
+	font-family: Tahoma, sans-serif;
+	background-image: url(bg.gif);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+        margin-left: 40px;
+        
+}

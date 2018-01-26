@@ -26,7 +26,7 @@ if ($_GET["Mode"] == "View") {
         echo "Select query failed!";
     }
     while ($fetch = mysqli_fetch_assoc($result)) {
-        echo "<h1>" . $fetch["FirstName"] . " " . $fetch["LastName"] . "</h1>";
+        echo "<h1 class=test>" . $fetch["FirstName"] . " " . $fetch["LastName"] . "</h1>";
         //echo "<img src='" . $fetch["Logo"] . "' width='50px' alt='" . $fetch["Logo"] . "'/>";
     }
 
